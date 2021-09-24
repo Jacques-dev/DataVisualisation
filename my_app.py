@@ -60,13 +60,13 @@ if option == "dom":
 if option == "Lat":
     fig, ax = plt.subplots()
     ax.hist(x=df["Lat"], range=(40.5, 41))
-    ax.set_xlabel("Longitude")
+    ax.set_xlabel("Latitude")
     ax.set_ylabel("Frequency")
     st.pyplot(fig)
 if option == "Lon":
     fig, ax = plt.subplots()
     ax.hist(x=df["Lon"], range=(-74.3, -73.6))
-    ax.set_xlabel("Latitude")
+    ax.set_xlabel("Longitude")
     ax.set_ylabel("Frequency")
     st.pyplot(fig)
 
