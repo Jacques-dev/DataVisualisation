@@ -5,3 +5,4 @@ Seaborn
 datetime
 numpy
 pandas_profiling
+st_profile_report
