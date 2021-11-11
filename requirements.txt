@@ -4,6 +4,3 @@ Streamlit
 Seaborn
 datetime
 numpy
-calendar
-altair
-pandas_profiling
