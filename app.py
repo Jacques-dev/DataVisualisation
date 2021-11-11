@@ -118,15 +118,15 @@ def main():
         option = st.sidebar.selectbox('Select the dataset you want',["2016", "2017", "2018", "2019", "2020"])
 
         if option == "2016":
-            displayPandasProfiling("DF2016.html")
+            displayPandasProfiling("df2016.html")
         if option == "2017":
-            displayPandasProfiling("DF2017.html")
+            displayPandasProfiling("df2017.html")
         if option == "2018":
-            displayPandasProfiling("DF2018.html")
+            displayPandasProfiling("df2018.html")
         if option == "2019":
-            displayPandasProfiling("DF2019.html")
+            displayPandasProfiling("df2019.html")
         if option == "2020":
-            displayPandasProfiling("DF2020.html")
+            displayPandasProfiling("df2020.html")
 
     # DATA CROSS ANALYSIS -----------------------------------------------------------------------------------------------------------------------
 
