@@ -4,3 +4,4 @@ Streamlit
 Seaborn
 datetime
 numpy
+pandas_profiling
