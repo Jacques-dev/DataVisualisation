@@ -41,10 +41,10 @@ def main():
     @st_log
     @st.cache(suppress_st_warning=True, allow_output_mutation=True)
     def loadData(name):
-        n = sum(1 for line in open(name)) - 1 #number of records in file (excludes header)
-        s = 1000000 #desired sample size
-        skip = sorted(random.sample(range(1,n+1),n-s))
-        df = pd.read_csv("https://jtellier.fr/DataViz/"+name, skiprows=skip, low_memory=False)
+        nlinesfile = 20000000
+        nlinesrandomsample = 1000000
+        lines2skip = np.random.choice(np.arange(1,nlinesfile+1), (nlinesfile-nlinesrandomsample), replace=False)
+        df = pd.read_csv("https://jtellier.fr/DataViz/"+name, low_memory=False, skiprows=lines2skip)
 
         # DATA TRANSFORMATION ----------------------------------------------------------------------------------------------------------------------
         df["date_mutation"] = pd.DatetimeIndex(df['date_mutation']).month
