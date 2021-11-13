@@ -6,3 +6,4 @@ datetime
 numpy
 pandas_profiling
 streamlit_pandas_profiling
+displayPandasProfiling
